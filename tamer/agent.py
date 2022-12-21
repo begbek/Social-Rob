@@ -154,7 +154,7 @@ class Tamer:
                 if self.tame:
                     disp.show_action(action)
 
-                if self.imper : # gets imperative feedback to get the correct action within 300ms before the step
+                if self.imper : # gets imperative feedback to get the correct action with 300ms of pause before the step
                     disp.show_action(action)
                     action = disp.get_imperative_feedback(action, env_name=self.env_name)
 

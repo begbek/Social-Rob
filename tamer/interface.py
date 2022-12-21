@@ -75,7 +75,9 @@ class Interface:
 
 	def get_emotional_feedback(self):
 		"""
-		Get human input. Lift Index (finger) for positive, lower Index (finger) for neutral, open hand for negative.
+		Get human input. Showing happiness toward the agent's action rewards him with a positive value.
+			Neutral rewards him 0 and a negative emotion (sad,angry,disgust) penalize his choice.
+			Your face traits should overexagerated in order to get stable result.
 		Returns: scalar reward (1 for positive, -1 for negative)
 		"""
 		time.sleep(0.15)
