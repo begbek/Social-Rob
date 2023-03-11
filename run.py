@@ -33,7 +33,8 @@ async def main():
 
 	await agent.train(model_file_to_save='autosave')
 	agent.play(n_episodes=1, render=True)
-	agent.evaluate(n_episodes=30)
+
+	print('coucou')
 
 
 if __name__ == '__main__':
