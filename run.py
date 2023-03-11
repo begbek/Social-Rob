@@ -35,9 +35,6 @@ async def main():
 	agent.play(n_episodes=1, render=True)
 	agent.evaluate(n_episodes=30)
 	
-	print('coucou')
-
-
 if __name__ == '__main__':
 	asyncio.run(main())
 	
